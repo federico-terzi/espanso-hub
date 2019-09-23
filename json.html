@@ -1,0 +1,20 @@
+---
+---
+{ 
+    "lastUpdate": "{{ site.time }}",
+    "packages": [
+        {% for package in site.packages %}
+        {
+            "name": "{{package.package_name}}",
+            "title": "{{package.package_title}}",
+            "version": "{{package.package_version}}",
+            "repo": "{{package.package_repo}}",
+            "desc": "{{package.package_desc}}",
+            "author": "{{package.package_author}}"
+        {% if forloop.last %}
+        }
+        {% else %}
+        },
+        {% endif %}
+        {% endfor %}
+]}
