@@ -1,0 +1,35 @@
+.install-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 0px 15px 25px;
+    width: 600px;
+    @media screen and (max-width: $screen-tablet) {
+        width: 90%;
+    }
+    
+    .install-bar {
+        font-size: 1.5em;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        outline: none;
+        width: 90%;
+    }
+
+    a {
+        position: relative;
+        right:0px;
+    }
+
+    img {
+        height: 40px;
+
+        @media screen and (max-width: $screen-tablet) {
+            display: none;
+        }
+    }
+
+    img:hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,36 @@
+title: espanso hub
+subtitle: The Official espanso Package Repository
+description: >- # this means to ignore newlines until "baseurl:"
+  The official espanso package repository.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://espanso.org" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  federico-terzi
+
+permalink: /blog/:title/
+highlighter: rouge
+
+collections:
+  packages:
+    output: true
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "packages"
+    values:
+      layout: "package"
+
+social:
+  name: Federico Terzi
+  links:
+    - https://www.youtube.com/c/FedericoTerzi
+    - https://www.linkedin.com/in/federico-terzi/
+    - https://github.com/federico-terzi

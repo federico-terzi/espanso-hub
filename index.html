@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-  </head>
-  <body>
-    <h1>espanso Hub </h1>
-  </body>
-</html>
+---
+title: Home
+layout: default
+hideTitle: True
+avoidContainer: True
+---
+<div class="jumbotron text-center">
+  <h1>Browse Packages</h1>
+  <p class="subtitle">Find the perfect packages to expand espanso capabilities</p>
+  
+  {% comment %}
+  <input type="text" id="searchBox" class="search-bar mt-5" placeholder="Search packages" />
+  {% endcomment %}
+</div>
+
+<div class="container">
+  <h2 class="text-center mb-5 mt-0">Featured</h2>
+  {% for package in site.packages %}
+    <div class="card">
+      <a href="{{package.url}}">
+        <div class="card-body">
+          <img src="/assets/images/box.svg" class="card-icon"/>
+          <h5 class="card-title">{{package.package_title}} - {{package.package_version}}</h5>
+          <p class="card-text">{{package.package_desc}}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

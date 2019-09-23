@@ -1,0 +1,11 @@
+.search-bar {
+    font-size: 1.5em;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    width: 800px;
+    @media screen and (max-width: $screen-tablet) {
+        width: 90%;
+    }
+}

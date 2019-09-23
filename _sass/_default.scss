@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+.jumbotron {
+    padding: 20px 0 80px 0;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url("/assets/images/background.svg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: white;
+}
+
+.card {
+    h5 {
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .card-icon {
+        float: left;
+        height: 55px;
+        margin-right: 20px;
+    }
+
+    .card-body {
+        padding: 15px 15px 15px 15px;
+    }
+
+    a {
+        color: $blackColor;
+        text-decoration: none;
+    }
+
+    &:hover {
+        border-color: $mainColor;
+    }
+
+    margin-bottom: 10px;
+}
+
+.content {
+    img {
+        display: block;
+        margin: auto;
+        max-width: 800px;
+        height: auto;
+
+        @media screen and (max-width: $screen-tablet) {
+            max-width: 100%;
+        }
+    }
+
+    h2, h3, h4 {
+        margin: 30px 0 20px 0;
+    }
+
+    .mybtn {
+        font-weight: 700;
+        font-size: 1.2em;
+        background-color: $mainColor;
+        color: white !important;
+        padding: 10px 25px 10px 25px;
+        border-radius: 40px;
+        border: 0;
+
+        @media screen and (max-width: $screen-tablet) {
+            font-size: 1.3em;
+        }
+    }
+}
+
+.light-text {
+    color: $grayColor;
+}

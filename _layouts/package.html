@@ -1,0 +1,33 @@
+---
+layout: default
+hideTitle: True
+avoidContainer: True
+---
+<div class="jumbotron text-left">
+    <div class="container">
+        <h1>{{page.package_title}} - {{page.package_version}}</h1>
+        <p class="subtitle">{{page.package_desc}}</p>
+
+        <div class="install-box">
+            <input type="text" id="installBox" readonly class="install-bar mt-3" value="espanso install {{page.package_name}}"/>
+            <a href="#" onclick="copyCommand();"><img src="/assets/images/copy.svg" class="copy-img"/></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    {{content | markdownify }}
+</div>
+
+<script>
+function copyCommand() {
+    /* Get the text field */
+    var copyText = document.getElementById("installBox");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+}
+</script>
