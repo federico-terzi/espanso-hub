@@ -1,7 +1,7 @@
 ---
 ---
 { 
-    "lastUpdate": "{{ site.time }}",
+    "lastUpdate": {{ site.time | date: "%s" }},
     "packages": [
         {% for package in site.packages %}
         {
