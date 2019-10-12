@@ -6,10 +6,10 @@
         {% for package in site.packages %}
         {
             "name": "{{package.package_name}}",
-            "title": "{{package.package_title}}",
+            "title": "{{package.package_title | replace: '\', '\\\\'}}",
             "version": "{{package.package_version}}",
             "repo": "{{package.package_repo}}",
-            "desc": "{{package.package_desc}}",
+            "desc": "{{package.package_desc | replace: '\', '\\\\' }}",
             "author": "{{package.package_author}}"
         {% if forloop.last %}
         }
