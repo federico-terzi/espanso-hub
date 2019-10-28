@@ -16,6 +16,20 @@ avoidContainer: True
 <div class="container">
   <h2 class="text-center mb-5 mt-0">Featured</h2>
   {% for package in site.packages %}
+    {% if package.featured %}
+    <div class="card">
+      <a href="{{package.url}}">
+        <div class="card-body">
+          <img src="/assets/images/box.svg" class="card-icon"/>
+          <h5 class="card-title">{{package.package_title}} - {{package.package_version}}</h5>
+          <p class="card-text">{{package.package_desc}}</p>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+  {% endfor %}
+  <h3 class="text-center mb-5 mt-5">All Packages</h3>
+  {% for package in site.packages %}
     <div class="card">
       <a href="{{package.url}}">
         <div class="card-body">

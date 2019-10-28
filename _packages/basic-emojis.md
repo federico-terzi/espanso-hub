@@ -5,6 +5,7 @@ package_desc: "A package to include some basic emojis in espanso."
 package_version: "0.1.0"
 package_author: "Federico Terzi"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+featured: true
 ---
 A simple package to bring basic emojis to espanso.
 It works by replacing keywords like `:lol` with `😂`. More details below.

@@ -5,6 +5,7 @@ package_desc: "Include Italian accents substitutions to espanso."
 package_version: "0.1.0"
 package_author: "Federico Terzi"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+featured: true
 ---
 A simple package to conveniently type italian with a non-italian keyboard layout.
 It works by replacing keywords like `e'` with `è`. More details below.
