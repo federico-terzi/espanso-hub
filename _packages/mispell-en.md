@@ -27,6 +27,6 @@ Type `yuo` and see what's happening.
 
 ## License
 
-[BSD 3-Clause "New" or "Revised" License](LICENSE)
+[BSD 3-Clause "New" or "Revised" License](https://github.com/timorunge/espanso-misspell-en/blob/master/LICENSE)
 
 Misspell is [MIT](https://github.com/client9/misspell/blob/master/LICENSE).
