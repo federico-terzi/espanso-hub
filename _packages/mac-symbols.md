@@ -2,7 +2,7 @@
 package_name: "mac-symbols"
 package_title: "Mac Symbols"
 package_desc: "Display common Mac symbols like ⌘ and ⌥"
-package_version: "0.1.0"
+package_version: "0.1.1"
 package_author: "Lifesign"
 package_repo: "https://github.com/lifesign/espanso-mac-symbols"
 ---
