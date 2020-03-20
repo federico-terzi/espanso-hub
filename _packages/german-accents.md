@@ -4,7 +4,9 @@ package_title: "German accents"
 package_desc: "Include German Accents substitutions to espanso"
 package_version: "0.1.0"
 package_author: "Puvendran Pillay"
-package_repo: "https://github.com/puven12/espanso-german-accents"
+package_original_repo: "https://github.com/puven12/espanso-german-accents"
+package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+is_core: true
 ---
 A simple package to conveniently type german with a non-german keyboard layout.
 It works by replacing keywords like `a"` with `ä`. More details below.

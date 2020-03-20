@@ -4,7 +4,9 @@ package_title: "Mac Symbols"
 package_desc: "Display common Mac symbols like ⌘ and ⌥"
 package_version: "0.1.1"
 package_author: "Lifesign"
-package_repo: "https://github.com/lifesign/espanso-mac-symbols"
+package_original_repo: "https://github.com/lifesign/espanso-mac-symbols"
+package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+is_core: true
 ---
 A simple package to display common Mac symbols like ⌘ and ⌥, More details below
 

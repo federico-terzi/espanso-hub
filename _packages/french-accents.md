@@ -4,7 +4,9 @@ package_title: "French Accents"
 package_desc: "A package to type French with a non-French keyboard layout. It works by replacing keywords like e' with é."
 package_version: "0.1.0"
 package_author: "Otto Piramuthu"
-package_repo: "https://github.com/ottopiramuthu/espanso-package-example"
+package_original_repo: "https://github.com/ottopiramuthu/espanso-package-example"
+package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+is_core: true
 ---
 A simple package to conveniently type French with a non-French keyboard layout.
 Text expansions match Vim's `:digraph` commands.

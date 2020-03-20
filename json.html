@@ -10,7 +10,14 @@
             "version": "{{package.package_version}}",
             "repo": "{{package.package_repo}}",
             "desc": "{{package.package_desc | replace: '\', '\\\\' }}",
-            "author": "{{package.package_author}}"
+            "author": "{{package.package_author}}",
+            "is_core": {{package.is_core}},
+            {% if package.package_original_repo %}
+            "original_repo": "{{package.package_original_repo}}",
+            {% else %}
+            "original_repo": "{{package.package_repo}}",
+            {% endif %}
+        
         {% if forloop.last %}
         }
         {% else %}

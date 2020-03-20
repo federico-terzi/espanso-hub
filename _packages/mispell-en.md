@@ -5,7 +5,7 @@ package_desc: "Replace commonly misspelled english words."
 package_version: "0.1.1"
 package_author: "Timo Runge"
 package_repo: "https://github.com/timorunge/espanso-misspell-en"
-featured: true
+is_core: false
 ---
 # misspell-en
 

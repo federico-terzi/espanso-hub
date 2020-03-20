@@ -5,6 +5,7 @@ package_desc: "Replace american english with british english."
 package_version: "0.1.1"
 package_author: "Timo Runge"
 package_repo: "https://github.com/timorunge/espanso-misspell-en"
+is_core: false
 ---
 # misspell-en_UK
 

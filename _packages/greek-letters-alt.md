@@ -4,7 +4,9 @@ package_title: "Name-Based Greek Letter Expansions"
 package_desc: "Expand :[letter name] to the corresponding greek letter. The first character determines the letter case"
 package_version: "0.1.0"
 package_author: "Su-Well"
-package_repo: "https://github.com/Su-Well/espanso-package-greek-letters"
+package_original_repo: "https://github.com/Su-Well/espanso-package-greek-letters"
+package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+is_core: true
 ---
 
 # Greek Letters from Espanso

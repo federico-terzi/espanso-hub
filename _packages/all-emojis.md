@@ -4,7 +4,9 @@ package_title: "All Emojis"
 package_desc: "All emojis, with alt names, provided by gemoji"
 package_version: "0.1.0"
 package_author: "FoxxMD"
-package_repo: "https://github.com/FoxxMD/espanso-all-emojis"
+package_original_repo: "https://github.com/FoxxMD/espanso-all-emojis"
+package_repo: "https://github.com/federico-terzi/espanso-hub-core"
+is_core: true
 featured: true
 ---
 All emojis, with all non-conflicting alt names, provided by [gemoji](https://github.com/github/gemoji).
