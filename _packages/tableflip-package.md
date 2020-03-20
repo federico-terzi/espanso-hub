@@ -8,7 +8,10 @@ package_original_repo: "https://github.com/timvoet/espanso-package-tableflip"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
-A simple package to flip tables using Espanso.
+# espanso-package-tableflip
+An espanso package for flipping tables
+
+For more information, read the [documentation](https://espanso.org/docs/)
 
 Current triggers
 
@@ -16,3 +19,5 @@ Current triggers
 | -------------------- | --------------- |
 | `:tableflip:`        | (╯°□°）╯︵ ┻━┻   |
 | `:fliptable:`        | (╯°□°）╯︵ ┻━┻   |
+| `:fixtable:`         | ┬─┬ノ( º _ ºノ) |
+| `:angry table flip:` | ‎(ﾉಥ益ಥ）ﾉ﻿ ┻━┻ |
