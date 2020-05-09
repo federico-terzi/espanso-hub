@@ -7,6 +7,7 @@ package_author: "Dominique Da Silva"
 package_original_repo: "https://github.com/atika/espanso-lorem"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
+featured: true
 ---
 A simple package to generate random lorem ipsum sentences or paragraphs based on free macOS app [LoremBuilder](https://lorembuilder.com/).
 
