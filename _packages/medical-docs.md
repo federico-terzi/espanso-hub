@@ -2,7 +2,7 @@
 package_name: "medical-docs"
 package_title: "Medical Documentation"
 package_desc: "A package to assist in medical Documentation"
-package_version: "0.1.1"
+package_version: "0.1.2"
 package_author: "Bill Ressl"
 package_original_repo: "https://github.com/wressl/medical-docs"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
