@@ -1,6 +1,6 @@
 ---
 package_name: "sharewifi"
-package_title: "sharewifi Package"
+package_title: "sharewifi"
 package_desc: "An espanso package for quickly sharing Wi-Fi passwords and connection details on macOS."
 package_version: "0.1.0"
 package_author: "Brady Joslin"
@@ -12,7 +12,7 @@ is_core: true
 
 An espanso package for quickly sharing Wi-Fi passwords and connection details on macOS using [sharewifi](https://github.com/bradyjoslin/sharewifi). Generates QR codes that auto-configure iOS and Android devices. [Espanso](https://espanso.org/) is a free cross-platform text expander written in Rust.
 
-![sharewifi](./images/sharewifi.gif)
+![sharewifi](https://github.com/bradyjoslin/espanso-package-sharewifi/raw/master/images/sharewifi.gif)
 
 For more information about espanso packages, read the [documentation](https://espanso.org/docs/).
 
