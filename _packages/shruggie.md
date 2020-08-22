@@ -9,7 +9,8 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 featured: true
 ---
-This package inserts ¯\\_(ツ)_/¯ (the Shruggie) when you type :shrug.
+
+This package inserts ¯\\_(ツ)_/¯ (the Shruggie) when you type `:shrug`.
 
 ### Installation
 
@@ -22,4 +23,4 @@ espanso restart
 
 ### Usage
 
-Type `:shrug` get ¯\\_(ツ)_/¯
+Type `:shrug` and get ¯\\_(ツ)_/¯

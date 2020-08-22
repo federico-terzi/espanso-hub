@@ -8,6 +8,7 @@ package_original_repo: "https://github.com/bradyjoslin/espanso-package-cht"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
+
 # espanso-package-cht
 
 An espanso package for getting code snippets from [Igor Chubin's](https://github.com/chubin) console-oriented cheat sheet service [cht.sh](https://cht.sh). [Espanso](https://espanso.org/) is a free cross-platform text expander written in Rust.
@@ -29,7 +30,9 @@ Uses [passive replacement](https://espanso.org/docs/passive-mode/), so it is tri
 
 ## Installation
 
-`espanso install cht https://github.com/bradyjoslin/espanso-package-cht --external`
+```
+espanso install cht --external
+```
 
 ## Dependencies
 

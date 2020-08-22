@@ -8,14 +8,16 @@ package_original_repo: "https://github.com/jahy/espanso-package-belarusian-lette
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
+
 Type belarusian letters without layout switching
 
-Usage:
-| Type | Replace |
-|----|---|
-| У_ | Ў |
-| у_ | ў |
-| И_ | І |
-| и_ | i |
-| Г_ | Ґ |
-| г_ | ґ |
+### Usage
+
+| Keyword | Replaced |
+|---------|----------|
+| `У_`    | Ў        |
+| `у_`    | ў        |
+| `И_`    | І        |
+| `и_`    | i        |
+| `Г_`    | Ґ        |
+| `г_`    | ґ        |
