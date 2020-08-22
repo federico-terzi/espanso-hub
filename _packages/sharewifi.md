@@ -30,7 +30,7 @@ For proper formatting of qr codes when using `:qrsharewifi`, trigger the replace
 
 ## Installation
 
-`espanso install sharewifi https://github.com/bradyjoslin/espanso-package-sharewifi --external`
+`espanso install sharewifi`
 
 ## Dependencies
 
