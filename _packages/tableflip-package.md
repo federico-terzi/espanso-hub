@@ -11,7 +11,7 @@ is_core: true
 
 # {{ page.package_title }}
 
-A package for flipping tables
+A package for flipping tables.
 
 ## Installation
 

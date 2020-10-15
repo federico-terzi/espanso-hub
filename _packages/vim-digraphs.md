@@ -9,7 +9,7 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
-# vim-digraphs 
+# {{ page.package_title }} 
 
 A package implementing most of the digraphs from vim-digraphs, themselves taken from the RFC1345 mnemonics. To use, prepend the digraph with comma.
 

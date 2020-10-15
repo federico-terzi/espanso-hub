@@ -10,4 +10,15 @@ is_core: false
 
 # {{ page.package_title }}
 
-All german Postleitzahlen
+All german Postleitzahlen.
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
+View the [Repository]({{page.package_repo}}).

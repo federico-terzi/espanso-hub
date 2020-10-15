@@ -58,3 +58,7 @@ For example, to type `ě`, type <kbd>e</kbd>, <kbd>shift<kbd>\\</kbd><kbd>3</kbd
 | ǘ | `u:\|@` |
 | ǚ | `u:\|#` |
 | ǜ | `u:\|$` |
+
+## Package Details
+
+View the [Repository](https://github.com/j6k4m8/espanso-pinyin)

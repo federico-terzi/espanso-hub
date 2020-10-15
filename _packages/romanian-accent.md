@@ -9,4 +9,17 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
+# {{ page.package_title }}
+
+A package to type Romanian accents.
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
 View the [Repository](https://github.com/CorentinDy/espanso-package-romanian-accent)

@@ -8,6 +8,7 @@ package_original_repo: "https://github.com/bradyjoslin/espanso-package-wttr"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
+
 # {{ page.package_title }}
 
 An espanso package for getting the weather from [Igor Chubin's](https://github.com/chubin) console-oriented weather service [wttr.in](https://wttr.in).
