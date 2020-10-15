@@ -8,7 +8,7 @@ package_original_repo: "https://github.com/bradyjoslin/espanso-package-wttr"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
-# espanso-package-wttr
+# {{ page.package_title }}
 
 An espanso package for getting the weather from [Igor Chubin's](https://github.com/chubin) console-oriented weather service [wttr.in](https://wttr.in).
 
@@ -28,20 +28,22 @@ Available replacement examples:
 
 ## Installation
 
-`espanso install wttr https://github.com/bradyjoslin/espanso-package-wttr --external`
-
-## Dependencies
-
-Passive replacement should be enabled in the espanso `default.yml` configuration file:
-
-```yaml
-enable_passive: true
-passive_key: CTRL
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
 ```
 
-Requires `curl`.
+## Prerequisites
+
+* Passive replacement should be enabled in the espanso `default.yml` configuration file:
+
+    ```yaml
+    enable_passive: true
+    passive_key: CTRL
+    ```
+
+* `curl`
 
 ## Package Details
 
-Repository: [https://github.com/bradyjoslin/espanso-package-wttr/](https://github.com/bradyjoslin/espanso-package-wttr/)
-
+Repository: <{{ page.package_original_repo }}>

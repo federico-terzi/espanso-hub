@@ -9,4 +9,13 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
+# {{ page.package_title }}
+
 Useful Excel formulas
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```

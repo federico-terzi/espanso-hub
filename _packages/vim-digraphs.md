@@ -15,8 +15,14 @@ A package implementing most of the digraphs from vim-digraphs, themselves taken 
 
 Example: The digraph for α is `a*`. Type `,a*` to type α.
 
-## general principles
-(adapted from original helpfile)
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Usage
 
 To make it easy to remember the mnemonic, the ~~second~~ third character has
 a standard meaning:
@@ -49,7 +55,7 @@ a standard meaning:
 | Five                  | 5     | Hiragana                          | ,A5 | ぁ |
 | Six                   | 6     | Katakana                          | ,A6 | ア |
 
-## what did i leave out?
+## What did I leave out?
 
 - The control characters from ASCII like Line Feed and Bell
 - The control characters from Unicode like Padding Character and High Octet Preset

@@ -9,12 +9,15 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 featured: true
 ---
+
+# {{ page.package_title }}
+
 A simple package to generate random lorem ipsum sentences or paragraphs based on free macOS app [LoremBuilder](https://lorembuilder.com/).
 
-### Installation
+## Installation
 
 ```
-espanso install lorem
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 

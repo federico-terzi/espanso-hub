@@ -7,4 +7,7 @@ package_author: "Sascha F. Kraeling"
 package_repo: "https://github.com/cyberfux/german-plz"
 is_core: false
 ---
+
+# {{ page.package_title }}
+
 All german Postleitzahlen

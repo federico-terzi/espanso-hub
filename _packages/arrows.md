@@ -9,8 +9,11 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
+# {{ page.package_title }}
+
 A simple package to add arrows and dashes
 
+## Usage
 
 | Symbol | Shortcut |
 |--------|----------|
@@ -25,3 +28,14 @@ A simple package to add arrows and dashes
 | ↑     | `\uarrow`    |
 | ↓     | `\darrow`    |
 | ⟷     | `\lrarrow`   |
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
+Repository: <{{ page.package_original_repo }}>

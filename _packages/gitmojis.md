@@ -8,16 +8,15 @@ package_original_repo: "https://github.com/Lyokolux/espanso-gitmojis"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
-# Espanso Gitmojis
+
+# {{ page.package_title }}
 
 A package for [Gitmojis](https://gitmoji.carloscuesta.me/).
 
 ## Installation
 
-Make sure you have already installed [Espanso](https://espanso.org/install/) first.
-
-```sh
-espanso install gitmojis
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 

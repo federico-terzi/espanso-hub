@@ -8,19 +8,16 @@ package_original_repo: "https://github.com/bradyjoslin/espanso-package-sharewifi
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
-# espanso-package-sharewifi
 
-An espanso package for quickly sharing Wi-Fi passwords and connection details on macOS using [sharewifi](https://github.com/bradyjoslin/sharewifi). Generates QR codes that auto-configure iOS and Android devices. [Espanso](https://espanso.org/) is a free cross-platform text expander written in Rust.
+# {{ page.package_title }}
+
+An espanso package for quickly sharing Wi-Fi passwords and connection details on macOS using [sharewifi](https://github.com/bradyjoslin/sharewifi). Generates QR codes that auto-configure iOS and Android devices.
 
 ![sharewifi](https://github.com/bradyjoslin/espanso-package-sharewifi/raw/master/images/sharewifi.gif)
 
-For more information about espanso packages, read the [documentation](https://espanso.org/docs/).
-
 ## Usage
 
-Available replacements:
-
-| replacement    | description                                                  |
+| Replacement    | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | `:sharewifi`   | Prints Wi-Fi password.                                       |
 | `:qrsharewifi` | Prints Wi-Fi Network config QR Code for Android and iOS 11+. |
@@ -30,13 +27,15 @@ For proper formatting of qr codes when using `:qrsharewifi`, trigger the replace
 
 ## Installation
 
-`espanso install sharewifi`
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
 
-## Dependencies
+## Prerequisites
 
-Requires [sharewifi](https://github.com/bradyjoslin/sharewifi).
+* sharewifi - https://github.com/bradyjoslin/sharewifi
 
 ## Package Details
 
-Repository: [https://github.com/bradyjoslin/espanso-package-sharewifi/](https://github.com/bradyjoslin/espanso-package-sharewifi/)
-
+Repository: <{{ page.package_original_repo }}>

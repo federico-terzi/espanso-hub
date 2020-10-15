@@ -8,6 +8,17 @@ package_original_repo: "https://github.com/sin3point14/espanso-package-example"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
+
+# {{ page.package_title }}
+
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
 :angelo -> 🗿  
 (Why is this here? ¯\\_(ツ)_/¯)
 

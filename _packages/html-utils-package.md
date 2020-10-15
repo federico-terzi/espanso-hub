@@ -9,22 +9,23 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 featured: true
 ---
-# html-utils-package
+
+# {{ page.package_title }}
 
 Make HTML5 easier and less time-consuming with this [Espanso](https://espanso.org/) package!
 
-# Installation
-
-Make sure you have already installed [Espanso](https://espanso.org/install/) first.
+## Installation
 
 ```
-espanso install html-utils-package
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 
 That's all. You can start using the package. Open your favorite editor and type `:doctype` to test!
 
-# Triggers
+## Usage
+
+Available triggers:
 
 | Trigger  | Result |
 | ------------- | ------------- |

@@ -8,14 +8,15 @@ package_original_repo: "https://github.com/lifesign/espanso-mac-symbols"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
+
+# {{ page.package_title }}
+
 A simple package to display common Mac symbols like ⌘ and ⌥, More details below
 
-### Installation
-
-Install the package with:
+## Installation
 
 ```
-espanso install mac-symbols
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 

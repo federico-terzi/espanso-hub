@@ -9,9 +9,11 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
+# {{ page.package_title }}
+
 Type belarusian letters without layout switching
 
-### Usage
+## Usage
 
 | Keyword | Replaced |
 |---------|----------|
@@ -21,3 +23,14 @@ Type belarusian letters without layout switching
 | `и_`    | i        |
 | `Г_`    | Ґ        |
 | `г_`    | ґ        |
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
+Repository: <{{ page.package_original_repo }}>

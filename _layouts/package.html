@@ -5,12 +5,13 @@ avoidContainer: True
 ---
 <div class="jumbotron text-left">
     <div class="container">
-        <h1>{{page.package_title}} - {{page.package_version}}</h1>
+        <h1>{{page.package_name}} - {{page.package_version}}</h1>
         <p class="subtitle">{{page.package_desc}}</p>
 
         <div class="install-box">
-            <input type="text" id="installBox" readonly class="install-bar mt-3" value="espanso install {{page.package_name}}"/>
-            <a href="#" onclick="copyCommand();"><img src="/assets/images/copy.svg" class="copy-img"/></a>
+          <input type="text" id="installBox" readonly class="install-bar mt-3"
+                 value="espanso install {{page.package_name}} {% if page.is_core == false %}--external{% endif %}"/>
+          <a href="#" onclick="copyCommand();"><img src="/assets/images/copy.svg" class="copy-img"/></a>
         </div>
     </div>
 </div>

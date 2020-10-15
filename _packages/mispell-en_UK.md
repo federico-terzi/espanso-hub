@@ -7,23 +7,26 @@ package_author: "Timo Runge"
 package_repo: "https://github.com/timorunge/espanso-misspell-en"
 is_core: false
 ---
-# misspell-en_UK
+
+# {{ page.package_title }}
 
 misspell-en_UK is a espanso package which is replacing american english with british english.
 The package is based on [github.com/client9/misspell](https://github.com/client9/misspell).
 
-## Installation
-
-Install the package with:
-
-```
-espanso install misspell-en_UK
-espanso restart
-```
-
 ## Usage
 
 Type `color` and see what's happening.
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
+Repository: <{{ page.package_original_repo }}>
 
 ## License
 

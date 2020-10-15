@@ -9,8 +9,30 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
+# {{ page.package_title }}
+
 Provides text expansion and templates to assist medical documentation.
-The author is a practising family physician so the original package is targeted to family physicians, but should be general enough to help
+The author is a practising family physician. So the original package is
+targeted to family physicians, but should be general enough to help
 anyone interested in medical documentation.
 
-For more information, visit: [https://github.com/wressl/medical-docs](https://github.com/wressl/medical-docs)
+## Usage
+
+Type the abbreviation, press space and it will be expanded to its corresponding expansion. For example, `bp` will be expanded to `blood pressure`.
+
+You can find a list of available abbreviations and its expansions [here](https://github.com/wressl/medical-docs/blob/master/README.md#usage).
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
+Repository: <{{ page.package_original_repo }}>
+
+## License
+
+[GNU General Public License v3.0](https://github.com/wressl/medical-docs/blob/master/LICENSE)

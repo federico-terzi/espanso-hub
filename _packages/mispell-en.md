@@ -7,23 +7,26 @@ package_author: "Timo Runge"
 package_repo: "https://github.com/timorunge/espanso-misspell-en"
 is_core: false
 ---
-# misspell-en
+
+# {{ page.package_title }}
 
 misspell-en is a espanso package which is replacing commonly misspelled english words.
 The package is based on [github.com/client9/misspell](https://github.com/client9/misspell).
 
-## Installation
-
-Install the package with:
-
-```
-espanso install misspell-en
-espanso restart
-```
-
 ## Usage
 
 Type `yuo` and see what's happening.
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Package Details
+
+Repository: <{{ page.package_original_repo }}>
 
 ## License
 

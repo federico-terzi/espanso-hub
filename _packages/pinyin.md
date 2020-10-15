@@ -9,7 +9,18 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
+# {{ page.package_title }}
+
 A package that adds support for easily typing [Pinyin](https://en.wikipedia.org/wiki/Pinyin) Mandarin Romanization characters. Transcribing the tones involve adding diacritics above vowels. This is difficult with a conventional QWERTY keyboard, and so this espanso package adds easy mnemonic support to type tones.
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Usage
 
 The mnemonic is:
 

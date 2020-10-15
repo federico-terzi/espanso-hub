@@ -8,36 +8,37 @@ package_original_repo: "https://github.com/puven12/espanso-german-accents"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
+
+# {{ page.package_title }}
+
 A simple package to conveniently type german with a non-german keyboard layout.
 It works by replacing keywords like `a"` with `ä`. More details below.
 
-### Installation
-
-Install the package with:
+## Installation
 
 ```
-espanso install german-accents
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 
-### Usage
+## Usage
 
 This package replaces the following keywords with the associated accent while you're
 typing:
 
 #### Lowercase Accents
 
-Keyword | Replaced
---- | ---
-`a"` | ä
-`o"` | ö
-`u"` | ü
-`s"` | ß
+| Keyword | Replaced |
+|  ----   |  ----    |
+| `a"`    |  ä       |
+| `o"`    |  ö       |
+| `u"`    |  ü       |
+| `s"`    |  ß       |
 
 #### Uppercase Accents
 
-Keyword | Replaced
---- | ---
-`A"` | Ä
-`O"` | Ö
-`U"` | Ü
+| Keyword | Replaced |
+|  ----   |  ----    |
+| `A"`    |  Ä       |
+| `O"`    |  Ö       |
+| `U"`    |  Ü       |

@@ -9,44 +9,41 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
-# espanso-package-cht
+# {{ page.package_title }}
 
-An espanso package for getting code snippets from [Igor Chubin's](https://github.com/chubin) console-oriented cheat sheet service [cht.sh](https://cht.sh). [Espanso](https://espanso.org/) is a free cross-platform text expander written in Rust.
+
+An espanso package for getting code snippets from [Igor Chubin's](https://github.com/chubin) console-oriented cheat sheet service [cht.sh](https://cht.sh).
 
 ![usage](https://github.com/bradyjoslin/espanso-package-cht/raw/master/images/chtjs.gif)
 
-For more information about espanso packages, read the [documentation](https://espanso.org/docs/).
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
 
 ## Usage
 
 Available replacements:
 
-| replacement      | description                 |
+|   Trigger        | Description                 |
 | ---------------- | --------------------------- |
 | `:cht/{query}/`  | Code only, no comments.     |
 | `:vcht/{query}/` | Verbose. Code and comments. |
 
-Uses [passive replacement](https://espanso.org/docs/passive-mode/), so it is triggered by highlighting the text and double tapping your configured passive key.
+Uses [passive mode](https://espanso.org/docs/passive-mode/), so it is triggered by highlighting the text and double tapping your configured passive key.
 
-## Installation
+## Prerequisites
 
-```
-espanso install cht --external
-```
+* Passive replacement should be enabled in the espanso `default.yml` configuration file:
 
-## Dependencies
-
-Passive replacement should be enabled in the espanso `default.yml` configuration file:
-
-```yaml
-enable_passive: true
-passive_key: CTRL
-```
-
-Requires `curl`.
+    ```yaml
+    enable_passive: true
+    passive_key: CTRL
+    ```
+* `curl`
 
 ## Package Details
 
-Repository: [https://github.com/bradyjoslin/espanso-package-cht/](https://github.com/bradyjoslin/espanso-package-cht/)
-
-
+Repository: <{{ page.package_original_repo }}>

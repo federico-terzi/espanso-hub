@@ -34,6 +34,13 @@
     }
 }
 
+h1,h2 {
+  margin-bottom: 15px;
+}
+h2 {
+  margin-top: 25px;
+}
+
 table {
     border-collapse: collapse;
     margin-top: 1em;
@@ -54,4 +61,5 @@ td, th {
 
 th {
     background-color: $lightGrayColor;
+    text-align: center;
 }

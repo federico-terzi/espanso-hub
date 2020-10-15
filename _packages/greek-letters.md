@@ -9,8 +9,15 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
-# Greek Letters from Espanso
+# {{ page.package_title }}
 
 This plugin allows Espanso users to expand keystrokes such as <kbd>:ga</kbd> into the
 Greek letter alpha α.
 
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```

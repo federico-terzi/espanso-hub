@@ -10,17 +10,21 @@ is_core: true
 featured: true
 ---
 
+# {{ page.package_title }}
+
 This package inserts ¯\\_(ツ)_/¯ (the Shruggie) when you type `:shrug`.
 
-### Installation
-
-Install the package with:
+## Installation
 
 ```
-espanso install shruggie
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 
-### Usage
+## Usage
 
-Type `:shrug` and get ¯\\_(ツ)_/¯
+Type `:shrug`, get ¯\\_(ツ)_/¯
+
+## Package Details
+
+Repository: <{{ page.package_original_repo }}>

@@ -8,7 +8,8 @@ package_original_repo: "https://github.com/ivanovyordan/espanso-package-dadjoke"
 package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
-# Espanso Dadjoke
+
+# {{ page.package_title }}
 
 A simple package that expands to a random dad joke every time.
 
@@ -16,16 +17,20 @@ Powered by [icanhazdadjoke](https://icanhazdadjoke.com/).
 
 ## Installation
 
-Make sure you have already installed [Espanso](https://espanso.org/install/) first.
-
-```sh
-espanso install dadjoke
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
 espanso restart
 ```
 
-Now you can open Slack and type `:dadjoke`
+## Usage 
 
-## Notes
+Simply type `:dadjoke` and it will be replaced by a random dad joke.
 
-* Requires `curl`
+## Prerequisites
+
+* Active Internet connection
+* `curl`
+
+### Note
+
 * Not tested on Windows

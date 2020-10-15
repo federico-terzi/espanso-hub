@@ -9,9 +9,18 @@ package_repo: "https://github.com/federico-terzi/espanso-hub-core"
 is_core: true
 ---
 
-# Greek Letters from Espanso
+# {{ page.package_title }}
 
-This plugin allows Espanso users easily type greek letters by expanding :[letter name] to the corresponding greek letter. The first character determines the letter case. For instance:
+This plugin allows users easily type greek letters by expanding :[letter name] to the corresponding greek letter. The first character determines the letter case. For instance:
+
+## Installation
+
+```
+espanso install {{ page.package_name }} {% if page.is_core == false %}--external{% endif %}
+espanso restart
+```
+
+## Usage
 
 <kbd>:Pi</kbd> --> Π
 
