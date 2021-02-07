@@ -4,7 +4,7 @@ package_title: "Obsidian in colour"
 package_desc: "Makes the process of adding colour to Obsidian a tad bit easier."
 package_version: "0.1.0"
 package_author: "Karlo Miličić"
-package_repo: "https://github.com/federico-terzi/espanso-obsidian-in-colour"
+package_repo: "https://github.com/KuSi833/espanso-obsidian-in-colour"
 is_core: false
 ---
 # Obsidian in Colour
