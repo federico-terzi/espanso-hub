@@ -17,8 +17,7 @@ The package is based on [github.com/client9/misspell](https://github.com/client9
 Install the package with:
 
 ```
-espanso install misspell-en
-espanso restart
+espanso install misspell-en --external && espanso restart
 ```
 
 ## Usage
